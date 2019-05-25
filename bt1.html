@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài tâp1</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function is_DayMonthYear(str) {
+        var regexp = /^(0[1-9]|[12][0-9]|3[0-2])+\/(0[1-9]|1[0-2])+\/([0-9]{4})+$/;
+        if (regexp.test(str)) {
+            return true;
+        }
+        return false;
+    }
+    var daymonthyear = "13/04/2000";
+    alert(is_DayMonthYear(daymonthyear));
+    var daymonthyear1 = "11-07-1996";
+    alert(is_DayMonthYear(daymonthyear1));
+</script>
+
+</html>

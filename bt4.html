@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài tập4</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function IsAccount(str) {
+        var regular = /^[_a-z0-9]{6,}$/;
+        if (regular.test(str)) {
+            alert("Mật khẩu hợp lệ");
+        } else {
+            alert("Mật khẩu không đúng vui lòng nhập lại mật khẩu")
+        }
+    }
+    var account = prompt("Nhập vào mật khẩu: ");
+    IsAccount(account);
+</script>
+
+</html>
